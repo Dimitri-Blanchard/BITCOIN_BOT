@@ -146,3 +146,25 @@ def identify_key_levels(df: pd.DataFrame) -> dict:
         "current_price": float(current_price),
         "latest_atr": float(latest_atr)
     }
+
+def find_pivot_points(data, is_high=True, window=5):
+           
+    pivots = []
+    length = len(data)
+    
+    if length < 2 * window + 1:
+        return pivots                        
+    
+    for i in range(window, length - window):
+        left_window = data[i-window:i]
+        right_window = data[i+1:i+window+1]
+        current = data[i]
+        
+        if is_high:
+            if current > max(left_window) and current > max(right_window):
+                pivots.append(i)
+        else:
+            if current < min(left_window) and current < min(right_window):
+                pivots.append(i)
+                
+    return pivots
