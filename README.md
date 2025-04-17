@@ -1,5 +1,7 @@
 # Market Analyzer & Trading Signal Generator
 
+![](https://raw.githubusercontent.com/Dimitri-Blanchard/BITCOIN_BOT/refs/heads/main/images/crypto.avif)
+
 ## Description
 
 This project provides a Python-based tool for analyzing cryptocurrency market data from the Binance public API. It calculates various technical indicators, identifies market trends and key support/resistance levels, analyzes order book pressure, and generates potential trading signals (LONG/SHORT/NEUTRE) with suggested Stop Loss (SL) and Take Profit (TP) levels.
