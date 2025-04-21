@@ -1,4 +1,4 @@
-# Market Analyzer & Trading Signal Generator
+# Trading Bot
 
 ![](https://raw.githubusercontent.com/Dimitri-Blanchard/BITCOIN_BOT/refs/heads/main/images/crypto.avif)
 
